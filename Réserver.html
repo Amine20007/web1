@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> amine voyage</title>
+
+    <style type="text/css">
+        body {
+            background-image: url("img/hotels.jpg");
+            background-repeat: no-repeat;
+            background-size: 1600px 900px;
+        }
+
+        h1 {
+            color: wheat;
+            text-align: center;
+        }
+
+        label {
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        input {
+            text-align: center;
+            background-color: hsla(50, 15%, 15%, .30);
+        }
+
+        table {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 45%;
+            margin: auto;
+        }
+
+        td {
+            color: #FFFFFF;
+        }
+
+        input[type=number] {
+            width: 130px;
+        }
+
+        input[type=date] {
+            width: 130px;
+        }
+
+        a.stylebouton {
+            border-radius: 5px;
+            border: solid thin #929292;
+            text-shadow: none;
+            background: #F6F6F6;
+            padding: 3px 8px;
+            margin: 2px;
+            text-decoration: none;
+            font-family: Arial;
+            font-size: 13px;
+        }
+
+        #a {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Réservation Hotel</h1>
+    <table style="width:60%">
+        <tr>
+            <td colspan="4">
+                <FORM>
+                    <SELECT NAME="destination" id="destination" style="color:#0f0e0e">
+                        <option value="" style="color:#0f0e0e" selected><b>Quel est Votre Destination</b></option>
+                        <option value="Sousse">Sousse</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Barcelone">Barcelone</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="London">London</option>
+                        <option value="Thailande">Thailande</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Marrakech">Marrakech</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Dubai">Dubai</option>
+                    </SELECT>
+                </FORM>
+            </td>
+        </tr>
+        <tr>
+            <td> <br>
+                <label for="arrival-date" style="color:#101110"><b>Date D'Arrivée </b></label>
+            </td>
+            <td> <input type="date" name="arrival-date" id="arrival-date" style="color:#FFFFFF">
+            </td>
+            <td>
+                <label for="departure-date" style="color:#101110"><b>Date De Sortie </b></label>
+            </td>
+            <td> <input type="date" name="departure-date" id="departure-date" style="color:#FFFFFF"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"> <br>
+                <p style="color:#101110"><b>Nombre De Visiteurs</b></p> <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="adults" style="color:#101110"><b>Adultes</b></label>
+            </td>
+            <td>
+                <input type="number" id="adults" style="color:#FFFFFF">
+            </td>
+            <td>
+                <label for="children" style="color:#101110"> <b>Enfants</b></label>
+            </td>
+            <td> <input type="number" id="children" style="color:#FFFFFF">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="rooms" style="color:#101110"><b>Chambres</b></label>
+            </td>
+            <td>
+                <input type="number" id="rooms" style="color:#FFFFFF">
+            </td>
+            <td colspan="3" style="color:#101110"> <br> <br>
+                <input type="radio" name="room-type" value="chambre-seul"><b>Chambre Single</b><br>
+                <input type="radio" name="room-type" value="chambre-double"><b>Chambre Double</b><br>
+                <input type="radio" name="room-type" value="chambre de famille"> <b>Suite</b><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="width: 400px; height: 200px;">
+                <input type="submit" value="Tarifs" style="color:#FFFFFF">
+            </td>
+        </tr>
+    </table>
+    <p id="a"> <a class="stylebouton" href="accueil.html">Retour Page d'accueil</a> </p>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> amine voyage</title>
+
+    <style type="text/css">
+        body {
+            background-image: url("img/avion.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        #f {
+            text-align: center;
+            color: blue;
+        }
+
+        table {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 45%;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            color: white;
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: none;
+            background-color: hsla(50, 15%, 15%, 0.3);
+            color: white;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #F6F6F6;
+            color: #000;
+            font-family: Arial;
+            font-size: 13px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #a {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .stylebouton {
+            border-radius: 5px;
+            border: solid thin #929292;
+            text-shadow: none;
+            background: #F6F6F6;
+            padding: 3px 8px;
+            margin: 2px;
+            text-decoration: none;
+            font-family: Arial;
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="f">Billet D'avion</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="text">Ville de Départ</label>
+                <input id="text" type="text">
+            </td>
+            <td>
+                <label for="text1">Destination</label>
+                <input id="text1" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="for-de-label">Date de Départ</label>
+                <input id="for-de-label" type="date">
+            </td>
+            <td>
+                <label for="for-de-label1">Date de Retour</label>
+                <input id="for-de-label1" type="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="number1">Adultes</label>
+                <input id="number1" type="number">
+            </td>
+            <td>
+                <label for="number2">Enfants</label>
+                <input id="number2" type="number">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="civi">Classe</label>
+                <select id="civi">
+                    <option value="Economique" selected>Economique Class</option>
+                    <option value="First">First Class</option>
+                    <option value="Business">Business Class</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Chercher des vols">
+            </td>
+        </tr>
+    </table>
+    <p id="a"><a class="stylebouton" href="accueil.html">Retour Page d'accueil</a></p>
+</body>
+
+</html>
